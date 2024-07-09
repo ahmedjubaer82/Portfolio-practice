@@ -1,0 +1,118 @@
+.header-container {
+    height: 100%;        
+    background-image: url(./Image/Banner/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.nav {
+    color: var(--font-primary-color);
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#right-menu-id {
+    width: 145px;
+    text-align: right;
+}
+
+.banner-title h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 40px 0px;
+}
+
+.banner-desc {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 40px 0px;
+}
+
+.banner-profile-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+}
+
+.works-icon-container {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--font-primary-color);
+}
+
+.check-icon {
+    width: 50px;
+}
+
+.banner-profile-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 30px;
+}
+
+.banner-image-container {
+    background-color: var(--font-primary-color);
+    width: fit-content;
+}
+
+#banner-image {
+    height: 300px;
+}
+
+.complete-project-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.complete-project-card h1 {
+    font-size: 150px;    
+}
+
+.complete-project-card p {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* This is media query */
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+
+    .container {
+        padding: 0px 10px;
+    }
+
+    .nav {
+        font-size: 20px;
+    }
+
+    .complete-project-container{
+        flex-direction: column;
+    }
+
+    .banner-profile-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-image-container {
+        width: 100%;
+    }
+
+    #banner-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-title h1 {
+        font-size: 30px;
+    }
+
+    }
